@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Upgrade LocalType to Pro with a lifetime license.">
+  <title>LocalType Pro — Lifetime Upgrade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a class="brand" href="index.html">LocalType</a>
+      <div>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+
+    <p class="callout" role="status"><strong>Sandbox testing only.</strong> Checkout uses test payments. LocalType Pro is not yet available for real purchases.</p>
+    <section class="upgrade-hero">
+      <div>
+        <p class="eyebrow">LOCALTYPE PRO</p>
+        <h1>One purchase.<br>No subscription.</h1>
+        <p class="lead">Unlock the full LocalType productivity toolkit on up to three devices while keeping your snippets and profiles local.</p>
+        <div class="chips">
+          <span>Lifetime license</span>
+          <span>3 devices</span>
+          <span>No cloud account</span>
+          <span>Paddle checkout</span>
+        </div>
+      </div>
+
+      <aside class="price-card">
+        <span>LOCALTYPE PRO</span>
+        <strong id="priceLabel">$24.99</strong>
+        <p>one-time lifetime license</p>
+        <button id="buyButton" class="button-link payment-button" type="button">Buy LocalType Pro</button>
+        <p id="checkoutStatus" class="status-copy">Checking checkout availability…</p>
+      </aside>
+    </section>
+
+    <section class="plan-compare">
+      <article>
+        <span class="plan-tag">FREE</span>
+        <h2>LocalType Free</h2>
+        <ul>
+          <li>20 snippets</li>
+          <li>1 autofill profile</li>
+          <li>Core text expansion</li>
+          <li>Multiline snippets</li>
+          <li>Date/time variables</li>
+          <li>Per-site privacy controls</li>
+          <li>Plain local backup</li>
+        </ul>
+      </article>
+
+      <article class="pro-card">
+        <span class="plan-tag">PRO</span>
+        <h2>LocalType Pro</h2>
+        <ul>
+          <li>Up to 1,500 snippets</li>
+          <li>Up to 100 autofill profiles</li>
+          <li>Encrypted local backups</li>
+          <li><code>{{cursor}}</code> placement</li>
+          <li>Folders, favorites and advanced organization</li>
+          <li>3-device lifetime activation</li>
+          <li>Future Pro productivity upgrades</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="activationPanel" class="activation-panel">
+      <div>
+        <p class="eyebrow">ACTIVATE OR RESTORE</p>
+        <h2>Already purchased?</h2>
+        <p>Use the email from your Paddle checkout and the transaction ID from your receipt. LocalType uses these only to verify the purchase and issue a signed token for this installation.</p>
+      </div>
+
+      <form id="restoreForm" class="restore-form">
+        <label>
+          <span>Purchase email</span>
+          <input id="purchaseEmail" type="email" autocomplete="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          <span>Paddle transaction ID</span>
+          <input id="transactionId" type="text" autocomplete="off" required placeholder="txn_…">
+        </label>
+        <button id="restoreButton" class="button-link payment-button" type="submit">Activate this device</button>
+      </form>
+
+      <div id="activationResult" class="activation-result hidden">
+        <span class="plan-tag">ACTIVATION READY</span>
+        <h3>Copy this LocalType activation token</h3>
+        <p>Return to LocalType → Manage → Plan → Activate Pro and paste this token.</p>
+        <textarea id="activationToken" rows="5" readonly spellcheck="false"></textarea>
+        <div class="activation-actions">
+          <button id="copyTokenButton" class="button-link payment-button" type="button">Copy activation token</button>
+          <button id="deactivateButton" class="button-link payment-button secondary-payment" type="button">Deactivate this device</button>
+        </div>
+      </div>
+
+      <p id="activationMessage" class="status-copy" aria-live="polite"></p>
+    </section>
+
+    <section class="trust-strip">
+      <article>
+        <strong>Payment stays with Paddle</strong>
+        <p>LocalType never receives or stores your card number, CVV, UPI credentials, or bank details.</p>
+      </article>
+      <article>
+        <strong>Your writing stays local</strong>
+        <p>The licensing service never receives snippets, autofill profiles, backups, or the text you type on websites.</p>
+      </article>
+      <article>
+        <strong>Restore without an account</strong>
+        <p>Your Paddle receipt plus purchase email can restore Pro to an eligible device.</p>
+      </article>
+    </section>
+
+    <footer>
+      <span>LocalType Pro · one-time lifetime license</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></span>
+    </footer>
+  </main>
+
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script src="commercial-config.js"></script>
+  <script src="upgrade.js"></script>
+</body>
+</html>
