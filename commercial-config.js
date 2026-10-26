@@ -1,5 +1,5 @@
 window.LOCALTYPE_PAYMENTS = Object.freeze({
-  enabled: true,
+  enabled: false,
   environment: "sandbox",
   provider: "paddle",
   clientToken: "test_e3cb4227b5a994712cdc873b755",
