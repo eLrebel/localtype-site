@@ -30,7 +30,7 @@
 
       <section>
         <h2>Where information is stored</h2>
-        <p>snippets, profiles, settings, paused-site rules, counters, and related extension state are stored locally in Chrome extension storage. LocalType does not operate a cloud database containing your snippets or autofill profiles.</p>
+        <p>Snippets, profiles, settings, paused-site rules, counters, and related extension state are stored locally in Chrome extension storage. LocalType does not operate a cloud database containing your snippets or autofill profiles.</p>
       </section>
 
       <section>
@@ -73,8 +73,10 @@
       </section>
 
       <section>
-        <h2>Sandbox purchase and activation testing</h2>
-        <p>The public-beta extension does not process payments. This website offers sandbox testing of a future Pro edition. Paddle handles test checkout data. When you request activation, the licensing service hosted on Cloudflare receives your purchase email, Paddle transaction ID, and random installation identifier to verify the purchase and manage device slots. It stores transaction identifiers, purchase status, and installation activation records; it does not receive your snippets or autofill profiles. Payment-card credentials are not stored by the extension or licensing service. Real purchases are not available yet.</p>
+        <h2>Pro purchases and license verification</h2>
+        <p>Paddle handles optional LocalType Pro purchases on a separate checkout website. When you activate or restore a purchase, the licensing service hosted on Cloudflare receives your purchase email, Paddle transaction ID, and random installation identifier to verify the purchase and manage up to three device slots. The service stores transaction and customer identifiers, purchase status, and installation activation records. The extension stores a signed activation token and sends that token and installation identifier over HTTPS for periodic license verification and renewal. Tokens provide up to seven days of offline access between successful verifications; this renewal is not a subscription or an additional charge.</p>
+        <p>Paddle processes checkout information under its own privacy policy. LocalType and its licensing service do not store card numbers, CVV, UPI credentials, or bank-account credentials. Cloudflare and the website host process requests and associated network information, such as IP addresses, to deliver and protect these services. Snippets, autofill profile contents, and editable page text are not sent to the licensing service.</p>
+        <p>License records are retained as needed to support lifetime access, enforce device limits, prevent fraud, and reconcile refunds. Contact support to request access, correction, or deletion of licensing records; purchase records subject to payment-provider or legal retention requirements may need to be retained.</p>
       </section>
 
       <section>
@@ -84,10 +86,10 @@
 
       <section>
         <h2>Contact</h2>
-        <p>For support or privacy questions, email <a href="mailto:elrebelgamer01@gmail.com">elrebelgamer01@gmail.com</a> or see the <a href="support.html">LocalType support page</a>. If you email support, we receive your email address and the information you choose to send; please do not send private snippets, payment credentials or sensitive profile data.</p>
+        <p>For support or privacy questions, email <a href="mailto:elrebelgamer@gmail.com">elrebelgamer@gmail.com</a> or see the <a href="support.html">LocalType support page</a>. If you email support, we receive your email address and the information you choose to send; please do not send private snippets, payment credentials or sensitive profile data.</p>
       </section>
 
-      <p class="updated">LocalType extension and sandbox licensing website · Updated October 20, 2026</p>
+      <p class="updated">LocalType extension and licensing website · Updated October 26, 2026</p>
     </article>
     <footer><span>LocalType</span><span><a href="terms.html">Terms</a> · <a href="refunds.html">Refunds</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></span></footer>
   </main>
